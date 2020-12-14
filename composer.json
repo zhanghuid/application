@@ -1,0 +1,30 @@
+{
+    "name": "huid/container",
+    "description": "php code template",
+    "keywords":["plugins"],
+    "require": {
+        "PHP":">=7.1",
+        "tightenco/collect": ">5.0"
+    },
+    "suggest":{
+
+    },
+    "license": "MIT",
+    "autoload":{
+        "psr-4":{
+            "Huid\\Application\\":"src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.3",
+        "phpunit/phpunit": "^8.5"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
